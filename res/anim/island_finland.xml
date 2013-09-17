@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:fillAfter="true">
+ 
+   <translate
+        android:fromXDelta="-10%p"
+        android:fromYDelta="-65%p"
+        
+        
+        android:toXDelta="69%p"
+        android:toYDelta="-40%p"
+        
+        android:duration="1500" />
+
+</set>

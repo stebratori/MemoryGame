@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sky" >
+
+                <TextView
+                    android:id="@+id/gameboardCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView1"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#EFCD43" />
+
+                <TextView
+                    android:id="@+id/memoryGameCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#EFCD43" />
+
+                <ImageView
+                    android:id="@+id/memoryGameMedal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/memoryGameCoins"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/green_circle" />
+
+                <ImageView
+                    android:id="@+id/memoryMedal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/memoryGameMedal"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/memoryGameMedal"
+                    android:src="@drawable/red_circle" />
+
+                <ImageView
+                    android:id="@+id/cloudGameMedal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/memoryGameCoins"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/memoryMedal"
+                    android:src="@drawable/red_circle" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cloudGameMedal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/coins_small" />
+
+                <Button
+                    android:id="@+id/plusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="-80dp"
+                    android:layout_toRightOf="@+id/gameboardCoins"
+                    android:background="@drawable/lil_cloud_1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-80dp"
+                    android:background="@drawable/lil_cloud_1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/minusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="-80dp"
+                    android:layout_toLeftOf="@+id/button3"
+                    android:background="@drawable/lil_cloud_1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-80dp"
+                    android:layout_toLeftOf="@+id/cloudGameMedal"
+                    android:background="@drawable/lil_cloud_1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/memoryGameCoins"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="-80dp"
+                    android:layout_toLeftOf="@+id/button4"
+                    android:background="@drawable/lil_cloud_1"
+                    android:text="Button" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:text="7"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#EFCD43"
+                    android:textSize="55sp" />
+    
+</RelativeLayout>

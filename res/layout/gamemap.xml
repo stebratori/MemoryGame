@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/scandinavia_flags_map" >
+
+    <ImageView
+        android:id="@+id/fessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButtonShop"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginBottom="5dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="11dp"
+        android:src="@drawable/shop" />
+
+    <Button
+        android:id="@+id/islandBtn"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/imageButtonShop"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/fessor"
+        android:layout_marginTop="41dp"
+        android:background="#0000"
+        android:text="" />
+
+    <Button
+        android:id="@+id/faroeBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/islandBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/fessor"
+        android:background="#0000" />
+
+    <Button
+        android:id="@+id/norwayButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/imageButtonShop"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/faroeBtn"
+        android:background="#0000" />
+
+    <Button
+        android:id="@+id/swedenButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="250dp"
+        android:layout_alignBottom="@+id/fessor"
+        android:layout_below="@+id/islandBtn"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/norwayButton"
+        android:background="#0000" />
+
+    <Button
+        android:id="@+id/denmarkButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/swedenButton"
+        android:layout_toLeftOf="@+id/swedenButton"
+        android:background="#0000" />
+
+    <Button
+        android:id="@+id/finlandButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/islandBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/swedenButton"
+        android:background="#0000" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:src="@drawable/silver_small" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:src="@drawable/bronze_small" />
+
+    <TextView
+        android:id="@+id/gamemapCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/gamemapBronzeMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/gamemapSilverMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/gamemapGoldMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fessor"
+        android:layout_toRightOf="@+id/imageButtonShop"
+        android:src="@drawable/coins_small" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gamemapCoins"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/gold_small" />
+
+</RelativeLayout>

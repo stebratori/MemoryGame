@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/cloudAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/cloudQuestion"
+            android:background="#0000"
+            android:src="@drawable/lil_cloud_1" />
+
+        <ImageButton
+            android:id="@+id/cloudAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cloudAnswer1"
+            android:layout_below="@+id/cloudAnswer1"
+            android:layout_marginTop="20dp"
+            android:background="#0000"
+            android:src="@drawable/lil_cloud_1" />
+
+        <ImageView
+            android:id="@+id/cloudQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cloud" />
+
+        <ImageButton
+            android:id="@+id/cloudAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cloudAnswer2"
+            android:background="#0000"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/cloudQuestion"
+            android:src="@drawable/lil_cloud_1" />
+
+        <ImageButton
+            android:id="@+id/cloudAnswer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cloudAnswer3"
+            android:background="#0000"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/cloudAnswer3"
+            android:src="@drawable/lil_cloud_1" />
+
+        <TextView
+            android:id="@+id/txtCloudAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cloudAnswer1"
+            android:layout_alignTop="@+id/cloudAnswer1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="o"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtCloudAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cloudAnswer2"
+            android:layout_alignLeft="@+id/txtCloudAnswer1"
+            android:layout_marginBottom="13dp"
+            android:text="o"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtCloudAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCloudAnswer1"
+            android:layout_alignBottom="@+id/txtCloudAnswer1"
+            android:layout_alignLeft="@+id/cloudAnswer3"
+            android:layout_marginLeft="30dp"
+            android:text="o"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtCloudAnswer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCloudAnswer2"
+            android:layout_alignBottom="@+id/txtCloudAnswer2"
+            android:layout_alignRight="@+id/txtCloudAnswer3"
+            android:layout_marginLeft="3dp"
+            android:text="o"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtCloudEquation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cloudAnswer1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="5+2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="43sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <ImageButton
+                android:id="@+id/move2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/move1"
+                android:layout_marginLeft="44dp"
+                android:layout_toRightOf="@+id/move1"
+                android:src="@drawable/yellow_field" />
+
+            <ImageButton
+                android:id="@+id/move3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/move2"
+                android:layout_marginLeft="44dp"
+                android:layout_toRightOf="@+id/move2"
+                android:src="@drawable/yellow_field" />
+
+            
+
+            <ImageButton
+                android:id="@+id/move1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="41dp"
+                android:layout_toRightOf="@+id/fessorFigurine"
+                android:src="@drawable/yellow_field" />
+
+            <ImageButton
+                android:id="@+id/move44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="41dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/move3"
+                android:src="@drawable/red_field" />
+
+            <ImageView
+                android:id="@+id/fessorFigurine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="76dp"
+                android:padding="0px" />
+
+            <TextView
+                android:id="@+id/gameboardCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/coins1" />
+
+            <ImageView
+                android:id="@+id/gameboardMedal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/gold_110" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
